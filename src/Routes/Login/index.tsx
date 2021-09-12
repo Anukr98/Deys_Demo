@@ -15,8 +15,8 @@ const Login: React.FC = () => {
 
     const history = useHistory()
     const [remember, setRemember] = useState<State['checked']>(false)
-    const [username, setUsername] = useState<State['username']>("")
-    const [password, setPassword] = useState<State["password"]>("")
+    // const [username, setUsername] = useState<State['username']>("")
+    // const [password, setPassword] = useState<State["password"]>("")
     const [form, setForm] = useState<State["checked"]>(false)
 
     const handleLogin = (event: SyntheticEvent) => {
@@ -55,7 +55,7 @@ const Login: React.FC = () => {
                                 type="text"
                                 className = "bg-white-100 w-full h-10 focus:outline-none px-4 text-sm font-display text-gray-300 border border-solid border-gray-400"
                                 placeholder = "Username"
-                                onChange = {e => setUsername(e.target.value)}
+                                // onChange = {e => setUsername(e.target.value)}
                             />
                             <Person className = "absolute bottom-2 right-2 text-gray-400" />
                         </div>
@@ -64,7 +64,7 @@ const Login: React.FC = () => {
                                 type="password"
                                 className = "bg-white-100 w-full h-10 focus:outline-none px-4 text-sm font-display text-gray-300 border border-solid border-gray-400"
                                 placeholder = "Password"
-                                onChange = {e => setPassword(e.target.value)}
+                                // onChange = {e => setPassword(e.target.value)}
                             />
                             <Lock className = "absolute bottom-2 right-2 text-gray-400" />
                         </div>
@@ -113,7 +113,7 @@ const Login: React.FC = () => {
                                 type="text"
                                 className = "bg-white-100 w-full h-10 focus:outline-none px-4 text-sm font-display text-gray-300 border border-solid border-gray-400"
                                 placeholder = "Email"
-                                onChange = {e => setUsername(e.target.value)}
+                                // onChange = {e => setUsername(e.target.value)}
                             />
                             <Email className = "absolute bottom-2 right-2 text-gray-400" />
                         </div>
